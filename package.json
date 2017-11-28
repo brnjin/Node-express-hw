@@ -1,0 +1,24 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brnjin/Node-express-hw.git"
+  },
+  "author": "Brian J",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brnjin/Node-express-hw/issues"
+  },
+  "homepage": "https://github.com/brnjin/Node-express-hw#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "path": "^0.12.7"
+  }
+}
