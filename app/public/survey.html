@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>FriendFinder</title>
+		<!-- Compiled and minified CSS -->
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  		<!-- Jquery CDN -->
+  		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  		<script>			
+		  $(document).ready(function() {
+		    $('select').material_select();
+		  });
+		</script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+	</head>
+	<body>
+		<div class="container">
+			<h3>Survey Questions</h3>
+			<hr>
+			<h4>
+				<b>About You</b>
+			</h4>
+			<div class="input-field col s6">
+				<input id="userName" type="text" class="validate">
+					<label class="active" for="first_name2">
+						<font size= "2" color="black">Name (Required)</font>
+					</label>
+			</div>
+			<div class="input-field col s6">
+				<input id="userPhoto" type="text" class="validate">
+					<label class="active" for="first_name2">
+						<font size= "2" color="black">Link to Photo Image (Required)</font>
+				</label>
+			</div>					
+			<h4><b>Question 1</b></h4>
+			<h5>You find it easy to get immersed in a book</h5>
+		  <div class="input-field col s6">
+		    <select id="question1">
+		      <option value="" disabled selected>Choose your option</option>
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+		  </div>
+		  <h4><b>Question 2</b></h4>
+			<h5>You are a dog person</h5>
+		  <div class="input-field col s6">
+		    <select id="question2">
+		      <option value="" disabled selected>Choose your option</option>
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+		  </div>
+		  <h4><b>Question 3</b></h4>
+			<h5>You like to finish what you've started</h5>
+		  <div class="input-field col s6">
+		    <select id="question3">
+		      <option value="" disabled selected>Choose your option</option>
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+		  </div>
+		  <h4><b>Question 4</b></h4>
+			<h5>Shrek is life</h5>
+		  <div class="input-field col s6">
+		    <select id="question4">
+		      <option value="" disabled selected>Choose your option</option>
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+		  </div>
+		  <h4><b>Question 5</b></h4>
+			<h5>You find it easy to get lost in a daydream</h5>
+		  <div class="input-field col s6">
+		    <select id="question5">
+		      <option value="" disabled selected>Choose your option</option>
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+		  </div>
+		  <h4><b>Question 6</b></h4>
+			<h5>It is hard to talk in front of people</h5>
+		  <div class="input-field col s6">
+		    <select id="question6">
+		      <option value="" disabled selected>Choose your option</option>
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+		  </div>
+		  <h4><b>Question 7</b></h4>
+			<h5>You like to think outside the box</h5>
+		  <div class="input-field col s6">
+		    <select id="question7">
+		      <option value="" disabled selected>Choose your option</option>
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+		  </div>
+		  <h4><b>Question 8</b></h4>
+			<h5>You like to eat pineapple pizza</h5>
+		  <div class="input-field col s6">
+		    <select id="question8">
+		      <option value="" disabled selected>Choose your option</option>
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+		  </div>
+		  <h4><b>Question 9</b></h4>
+			<h5>You find it easy to focus</h5>
+		  <div class="input-field col s6">
+		    <select id="question9">
+		      <option value="" disabled selected>Choose your option</option>
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+		  </div>
+		  <h4><b>Question 10</b></h4>
+			<h5>You can get mad easily</h5>
+		  <div class="input-field col s6">
+		    <select id="question10">
+		      <option value="" disabled selected>Choose your option</option>
+		      <option value="1">1 (Strongly Disagree)</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5 (Strongly Agree)</option>
+		    </select>
+		  </div>
+		  <a style="font-size: 20px; padding-top: 9px; margin-bottom:100px; height: 60px; width:799px" class="waves-effect waves-light btn">Find My Friend!</a>
+		  <br>
+		</div><!--  End of Container +++++++++++++++++++ -->
+	</body>
+</html>
