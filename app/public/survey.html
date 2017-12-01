@@ -17,7 +17,9 @@
 	<body>
 		<div class="container">
 			<h3>Survey Questions</h3>
+			<br>
 			<hr>
+			<br>
 			<h4>
 				<b>About You</b>
 			</h4>
@@ -32,7 +34,8 @@
 					<label class="active" for="first_name2">
 						<font size= "2" color="black">Link to Photo Image (Required)</font>
 				</label>
-			</div>					
+			</div>	
+			<br>				
 			<h4><b>Question 1</b></h4>
 			<h5>You find it easy to get immersed in a book</h5>
 		  <div class="input-field col s6">
@@ -153,8 +156,39 @@
 		      <option value="5">5 (Strongly Agree)</option>
 		    </select>
 		  </div>
-		  <a style="font-size: 20px; padding-top: 9px; margin-bottom:100px; height: 60px; width:799px" class="waves-effect waves-light btn">Find My Friend!</a>
+		  <!-- Button to submit user answers -->
+		  <a style="font-size: 20px; padding-top: 9px; margin-bottom:100px; height: 60px; width:799px" class="waves-effect waves-light btn" id= "addFriend">Find My Friend!</a>
 		  <br>
 		</div><!--  End of Container +++++++++++++++++++ -->
 	</body>
+
+	<script type="text/javascript">
+		//saves the user answers as an object
+		$("#addFriend").on("click", function(event) {
+			event.preventDefault();
+			var answers = [];
+			answers.push($("#question1").val());
+			answers.push($("#question2").val());
+			answers.push($("#question3").val());
+			answers.push($("#question4").val());
+			answers.push($("#question5").val());
+			answers.push($("#question6").val());
+			answers.push($("#question7").val());
+			answers.push($("#question8").val());
+			answers.push($("#question9").val());
+			answers.push($("#question10").val());
+			var newFriend = {
+				name: $("#userName").val().trim(),
+				photo: $("#userPhoto").val().trim(),
+				answer: answers
+			};
+			console.log(newFriend)
+				//Sends it to app/data/friends.js as an array of objects
+			$.post("/api/friends", newFriend, 
+				function(data) {
+					$("#userName").val("");
+					$("#userPhoto").val("");
+		})
+		});
+	</script>
 </html>
