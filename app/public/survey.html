@@ -159,6 +159,20 @@
 		  <!-- Button to submit user answers -->
 		  <a style="font-size: 20px; padding-top: 9px; margin-bottom:100px; height: 60px; width:799px" class="waves-effect waves-light btn" id= "addFriend">Find My Friend!</a>
 		  <br>
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+          <!-- Modal Structure -->
+            <div id="modal1" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h4>Here is your friend match!</h4>
+                    <div id= "friendName"></div>
+                    <img id="friendPhoto" src="" width = "230">
+                    </div>
+                    <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                </div>
+            </div>
 		</div><!--  End of Container +++++++++++++++++++ -->
 	</body>
 
@@ -182,13 +196,25 @@
 				photo: $("#userPhoto").val().trim(),
 				answer: answers
 			};
-			console.log(newFriend)
-				//Sends it to app/data/friends.js as an array of objects
-			$.post("/api/friends", newFriend, 
-				function(data) {
-					$("#userName").val("");
-					$("#userPhoto").val("");
-		})
+            //Clear fields after submission
+            $("#userName").val("");
+            $("#userPhoto").val("");
+            $("#question1").val("");
+            $("#question2").val("");
+            $("#question3").val("");
+            $("#question4").val("");
+            $("#question5").val("");
+            $("#question6").val("");
+            $("#question7").val("");
+            $("#question8").val("");
+            $("#question9").val("");
+            $("#question10").val("");
+			//Sends it to app/data/friends.js as an array of objects
+			$.post("/api/friends", newFriend, function(data) {
+/*                $('#friendname').html(data.bffName);
+                $('#friendphoto').attr("src",data.bffPhoto);
+                $('#myModal').modal("show");*/
+		    })
 		});
 	</script>
 </html>

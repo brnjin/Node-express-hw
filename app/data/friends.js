@@ -12,7 +12,7 @@ var friendsList = [
 	{
 		"name": "Little Nessie",
 		"photo": "https://i1.wp.com/alittleadrift.com/wp-content/uploads/2009/09/Loch-Ness-Monster.jpg?resize=327%2C259",
-		"scores": [5, 1, 4, 2, 5, 5, 4, 4, 3, 1]
+		"scores": [2, 1, 4, 2, 5, 5, 4, 4, 3, 3]
 	}
 ]
 
